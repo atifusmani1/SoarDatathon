@@ -5,7 +5,7 @@ def flesch(text):
     return ts.flesch_reading_ease(text)
 
 
-def add_textstat(df):
+def add_flesch_reading(df):
     df = df.copy()
 
     df['flesch_a'] = df["response_a"].apply(flesch)
