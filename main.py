@@ -1,7 +1,4 @@
 import pandas as pd
-from length_metric import add_length_ratio
-from flesch_reading import add_flesch_reading
-from sentiment_analyzer import add_sentiment
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report
