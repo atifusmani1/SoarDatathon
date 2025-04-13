@@ -1,9 +1,9 @@
 ### this file calculates the lexical diversity metrics for each response, using the text-token ration
 
 ### function to get lexity diversity score ratio
+import pandas as pd
 
 def add_lexical_diversity_score(df):
-    import pandas as pd
 
     # define text responses from a and b
     text_a = df['response_a']
@@ -41,5 +41,3 @@ def add_lexical_diversity_score(df):
     
     df['ttr_ratio'] = df['log_ttr_a']/df['log_ttr_b']
     return df
-
-

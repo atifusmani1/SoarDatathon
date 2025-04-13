@@ -9,7 +9,6 @@ def build_central_df(df):
     df = add_length_ratio(df)
     df = add_flesch_reading(df)
     df = add_sentiment(df)
-    df = add_lexical_diversity_score(df)
+    #df = add_lexical_diversity_score(df)
     df = update_response(df)
     return df
-

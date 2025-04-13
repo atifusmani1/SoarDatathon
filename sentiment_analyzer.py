@@ -1,6 +1,8 @@
 import pandas as pd
 import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from tqdm import tqdm
+tqdm.pandas()
 
 analyzer = SentimentIntensityAnalyzer()
 
@@ -12,3 +14,4 @@ def add_sentiment(df):
     df['response_b_sentiment'] = df['response_b'].apply(get_sentiment)
     df['prompt_sentiment'] = df['prompt'].apply(get_sentiment)
     return df
+
