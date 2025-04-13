@@ -12,3 +12,4 @@ def update_response(df):
     })
 
     return df
+
