@@ -10,4 +10,3 @@ training_df = pd.read_csv(train_path)
 training_df = build_central_df(training_df)
 
 print(training_df.columns)
-
