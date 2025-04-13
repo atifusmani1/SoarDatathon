@@ -9,5 +9,4 @@ test_path = '/Users/deshawnwalker/Desktop/datathon/test.csv'
 training_df = pd.read_csv(train_path)
 training_df = build_central_df(training_df)
 
-
-print(training_df.columns)
+print(training_df.columns) 
