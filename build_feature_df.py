@@ -21,4 +21,3 @@ test_df = add_length_ratio(test_df)
 test_df = add_flesch_reading(test_df)
 test_df = add_sentiment(test_df)
 
-
